@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class EchoClientTCP {
+public class DateTimeClientTCP {
     public static void main(String[] args) throws IOException {
 
         String hostName = "127.0.0.1"; // Default host, localhost
@@ -11,7 +11,7 @@ public class EchoClientTCP {
             if (args.length > 1) {
                 portNumber = Integer.parseInt(args[1]);
                 if (args.length > 2) {
-                    System.err.println("Usage: java EchoClientTCP [<host name>] [<port number>]");
+                    System.err.println("Usage: java DateTimeClientTCP [<host name>] [<port number>]");
                     System.exit(1);
                 }
             }
