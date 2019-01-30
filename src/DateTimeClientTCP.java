@@ -4,7 +4,8 @@ import java.net.*;
 public class DateTimeClientTCP {
     public static void main(String[] args) throws IOException {
 
-        String hostName = "127.0.0.1"; // Default host, localhost
+        //String hostName = "127.0.0.1"; // Default host, localhost
+        String hostName = "10.253.10.92";
         int portNumber = 5555; // Default port to use
         if (args.length > 0) {
             hostName = args[0];
@@ -40,8 +41,8 @@ public class DateTimeClientTCP {
             String userInput;
 
             // Loop until null input string
-            System.out.println("Connected to HostName: " + InetAddress.getLocalHost());
-            System.out.println(" Port: " + clientSocket.getLocalPort());
+            //System.out.println("Connected to HostName: " + InetAddress.getLocalHost());
+            //System.out.println(" Port: " + clientSocket.getLocalPort());
             System.out.print("Enter a city or country to find time of: ");
 
             while ((userInput = stdIn.readLine()) != null && !userInput.isEmpty()) {
